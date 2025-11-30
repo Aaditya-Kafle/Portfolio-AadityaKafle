@@ -1,99 +1,200 @@
 body {
-	background-color: #EDE8D0;
+	background-color: #0a0e27;
+}
+
+.navbar { 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    padding: 1rem; 
+    position: relative; 
+    z-index: 10; 
+} 
+.nav-links{
+	color: #00d4ff;
+    list-style: none; 
+    display: none; 
+    gap: 25px;
+    text-align: center; 
+}
+.nav-links.open { 
+display: flex; 
+} 
+#hero{
+	position: relative;
+	height:350px;
+	margin-bottom: 20px;
 }
 #navigation{
-	text-align: right;
-	font-size: 30PX;
-    background-color: #787569;
-    padding: 20px;
-    position:sticky;
+	display: flex;
+	align-items: center;
+	position:relative;
+	z-index: 10;
 }
-#navigation a {
+.logo{
+	color:white;
+	font-size: 30px;
+	font-weight: bold;
+	padding-left: 30px;
+}
+.hero-content{
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	padding-right: 50px;
+}
+.hero-content h1 {
+	color:  #b8c5d6;
+}
+.nav-links li a {
 	color: white;
-
+	font-size: 18px;
+	font-weight: 500;
+	padding: 8px;
+	border-radius: 5px;
 }
-#navigation a:hover{
-	background-color:#93A1CB;
+#video-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;     
+    height: 100%;    
+    object-fit: cover;
+    z-index: -1;     
 }
-.introduction{
-	display:flex;
-	padding: 30px;
-}
-.about{
-	display: block;
+#about{
+	padding-top:250px;
 }
 #pic{
-	margin-top:70px;
+	margin-top:300px;
 	height:170px;
 	width:170px;
-	margin-inline: 30px;
 }
-.skills{
-	width:50%;
+#about h1 {
+	color:  #00AACC;
+	text-align: center;
+	margin-bottom: 20px;
+}
+#text {
+	color: #b8c5d6;
+	font-size: 16px;
+}
+#skills{
+	padding-top: 50px;
+	text-align: center;
+}
+#skills h1{
+	color:  #00AACC;
 }
 #skill_list{
 	display:grid;
 	grid-template-columns: repeat(3, 1fr);
 	row-gap: 10px;
-	list-style: none;
-	text-align: center;
-    
-}
-#projects{
-	display:grid;
-	grid-template-columns: repeat(3, 1fr);
-	gap:30px;	
-	list-style: none;
-	border: 15px black;
-	padding: 5px;
-	width:50%;
+	list-style: none;   
 }
 #skill_list li{
 	border: 2px solid black;
     padding: 20px 40px;
-    background-color: white;
+    background-color: #b8c5d6;
     border-radius: 10px; 
     font-size: 20px;
     margin-inline:10px;
 }
-#projects li{
-	border: 2px solid black;
-    padding: 20px 40px;
-    background-color: white;
+#projects{
+	padding-top: 50px;
+	text-align: center;
+}
+#projects h1{
+	color: #00AACC;
+}
+#project_list{
+	display:grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 15px;
+	list-style: none;
+	justify-items: center;
+}
+.pr{
+    background-color: #b8c5d6;;
+    border: 2px solid black;
     border-radius: 10px;
-    height:150px;
-    width:100px;
+    padding: 15px;
+    width: 200px;        
+    text-align: center;
+}
+.pr img {
+    width: 100%;
+    height: 140px;        
+    border-radius: 8px;
+}
+.pr p {
+    margin-top: 10px;
     font-size: 20px;
-    margin-inline:10px;
+    font-weight: bold;
 }
-.half_space{
-	display:flex;
-	padding:10px;
+#contact{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+    padding: 40px;
 }
-
+#contact h1{
+	color: #00AACC;
+}
 #form{
+	display: flex;
+	flex-direction: column;
 	font-size: 25px;
 	border: 2px solid black;
-	margin:10px;
+	align-items: center;
+	gap:4px;
 	width:350px;
-	padding: 10px;	
-	height: 300px;
+	padding: 20px;
+	border-radius: 8px;
 }
-#button{
-	border-radius:5px;
-	padding:4px;
-	background-color: #CBBD93;
-	font-size: 25px;
-	align-items:center;
-	cursor: pointer;
+#form input{
+	width: 100%;
+	padding:10px;
+	font-size: 16px;
+	border-radius: 3px;
+	background: #0F172A80 ;
+	color:white;
 }
-#button:hover{
-	background-color: white;
+#form label{
+	color: #00AACC;
 }
-.user{
+#submit{
+	background-color: rosybrown;
+	color:white;
 	padding:15px;
+	border-radius: 5px;
+	margin-top: 10px;
+}
+#form-message{
+	margin-top: 15px;
+	font-size: 16px;
+	color: #00AACC;
 }
 .footer{
 	padding-top: 50px;
 	font-size:16px;
+	text-align: center;
+	color: #00AACC;
 }
+@media screen and (min-width: 768px) { 
+    .navbar { 
+        flex-direction: row; 
+        justify-content: space-between; 
+    }  
+    .nav-links { 
+        display: flex;  
+        flex-direction: row; 
+        width: auto; 
+    }   
+    .menu-toggle { 
+        display: none; 
+    } 
+    section { 
+        padding: 4rem 8%; 
+    } 
+} 

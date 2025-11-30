@@ -8,81 +8,92 @@
 </head>
 
 <body>
-	<header>
+	<header id = "hero">
+		<video autoplay loop muted id ="video-background" >
+			<source src ="video/background.mp4" type = "video/mp4">
+				Your browser doesnot support the video tag
+			</video>
 		<nav id="navigation">
-			<a href="#">Home</a>
-			<a href="#">About</a>
-			<a href="#">Projects</a>
-			<a href="#">Contact</a>
+			<span class="logo"> My Portfolio </span>
+			<ul class = "nav-links">
+			<li><a href="#home">Home</a></li>
+			<li><a href="#about">About</a></li>
+			<li><a href="#projects">Projects</a></li>
+			<li><a href="#contact">Contact</a></li>
+		</ul>
+			<button class="menu-toggle" aria-label="Toggle navigation" id="menu-button">
+			</button>
         </nav>
-     </header>
 
-	<section id="section">
-
-     <div class="introduction" > 
-     	<img  id="pic" src="https://i.pinimg.com/564x/b1/3c/a3/b13ca305487326d44135fe713b30e865.jpg" >
-    
-    <div class="about">
-         <h1 id ="about_header"> About Me </h1>
+        <div class = "hero-content">
+        	<img  id="pic" src="https://i.pinimg.com/564x/b1/3c/a3/b13ca305487326d44135fe713b30e865.jpg" >
+        	<h1>Aaditya Kafle</h1>
+        </div>
+     </header> 
+     	
+    <section id="about">
+         <h1> About Me </h1>
     	<p id = "text"> My name is Aaditya Kafle. Currently I am currently a student at Herald College Kathmandu. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
     	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
     	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
     	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
     	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-    	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        
-    </div>
-</div>
- <div class="half_space">
-<div class = "skills"> 
+    	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>      
+    </section>
+
+<section id = "skills"> 
 	<h1 >Skills</h1>
 	<ul id="skill_list">
     <li>HTML</li>
     <li>CSS</li>
     <Li>Javascript</Li>
     <li>Python</li>
-
 </ul>
+</section>
 
-</div>
-
-
-
-<div class="projects"> 
+<section id="projects"> 
 <h1> Projects </h1>
-<ul id="projects">
-	<li>pr1</li>
-	<li>pr2</li>
-	<li>pr3</li>
-	<li>pr4</li>
+<ul id="project_list">
+	<li class="pr"><img src="https://imgs.search.brave.com/JgPjslu2Y-xerjO7aGNSR35lhGqj2o2hNdZT10Cdu3g/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9zdG9y/ZS5mZXJyYXJpLmNv/bS9kdy9pbWFnZS92/Mi9CR0RHX1BSRC9v/bi9kZW1hbmR3YXJl/LnN0YXRpYy8tL1Np/dGVzLTQ4L2RlZmF1/bHQvZHc5MDBiNWVl/Mi9pbWFnZXMvem9v/bS9MQTA4S2ZfMDlf/My5qcGc_c3RyaXA9/ZmFsc2U">
+	<p> Project 1 </p>
+	</li>
+	
+	<li class="pr"> <img src="https://imgs.search.brave.com/GfqCplgmckyrNoc2bSsJva4T9ysgDuiRL_KESmJiyfA/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9zLnlp/bWcuY29tL255L2Fw/aS9yZXMvMS4yL3RZ/Y1FLMXZjRTRyN0JX/Sm5lN3gwMlEtLS9Z/WEJ3YVdROWFHbG5h/R3hoYm1SbGNqdDNQ/VGsyTUR0b1BUVTNO/anRqWmoxM1pXSncv/aHR0cHM6Ly9tZWRp/YS56ZW5mcy5jb20v/ZW4vdGhlX21hbnVh/bF8zMDkvN2MxNGUw/MTdkMjhmNjNhNmYw/YWZjMWE4ODM5NzE0/NDU">
+		<p>Project 2 </p>
+	</li>
+	<li class="pr"> <img src="https://imgs.search.brave.com/sfQrnhTO48aXuyOK5rpsMb2v42I6UlTD3HRA7V-l7KY/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9tb3Rv/cnNwb3J0bWFnYXpp/bmUuYi1jZG4ubmV0/L3dwLWNvbnRlbnQv/dXBsb2Fkcy8yMDI1/LzAyLzIwMjUtTWNM/YXJlbi1NQ0wzOS1G/MS1jYXItODAweDQ1/MC5qcGc">
+		<p> Project 3 </p>
+	</li>
+	<li class ="pr"><img src="https://imgs.search.brave.com/tk2-0UA8rDYHWUMMyelti4jEmmWEJ5aQq-IaLdaLbZc/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9jZG4u/bW90b3JzcG9ydC5j/b20vaW1hZ2VzL21n/bC9ZOTlrTEdMWS9z/MTAwMC9mZXJuYW5k/by1hbG9uc28tYXN0/b24tbWFydGluLXIu/anBn">
+		<p> Project 4 </p>
+	</li>
 </ul>
-</div>
-</div>
-<div class="contactus">
+</section>
 
+<section id="contact">
 <h1> Contact Me: </h1>
         <form id="form">
         	<label>Name:</label>
-        	<input class ="user" type="text" placeholder="Enter your name"><br>
-        	<br>
+        	<input id = "name" type="text" placeholder="Enter your name">
+        	
         	
         	<label>Email:</label>
-            <input class="user" type="text" placeholder="Enter your gmail"><br>
-            <br>
+            <input id = "email" type="text" placeholder="Enter your gmail">
 
         	<label>Message:</label>
-        	<input class= "user" type="text" placeholder="Enter your message"><br>
-        	<br>
+        	<input id="message" type="text" placeholder="Enter your message">
         	
-         <button id = "button">send message</button>
-        </form>
-         </div>
-    
+        	
+         <button type = "submit" id = "submit">submit</button>
+
+         <div id ="form-message"></div>
+        </form>  
     </section>
    
 	<footer class="footer">
 	@All rights reserved
 </footer>
 
+<script src="js/script.js"></script>
 </body>
 </html>
